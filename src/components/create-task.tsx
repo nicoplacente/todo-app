@@ -3,7 +3,7 @@ import { Task } from "@prisma/client";
 import Link from "next/link";
 import ToggleButton from "./toggle-button";
 
-export default function CreateTask({ task }: { task: Task }) {
+export default function CreateTask({ task }: { task?: Task }) {
   const functionAction = task?.id ? updateTask : createTask;
 
   return (
