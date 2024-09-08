@@ -8,9 +8,10 @@ export async function createTask(formData: FormData) {
   const name = formData.get("name")?.toString();
   const priority = formData.get("priority")?.toString();
 
-  if (!name) {
+  if (!name || !priority) {
     return;
   }
+
   await prisma.task.create({
     data: {
       name,
