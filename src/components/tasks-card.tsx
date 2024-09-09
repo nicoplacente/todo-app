@@ -9,7 +9,7 @@ export default async function TasksCard({ task }: { task: Task }) {
       key={task.id}
       className="bg-slate-50/20 p-6 rounded-md shadow-xl border-2 sm:min-w-[300px] sm:max-w-[400px] relative w-full flex-grow border-white/55 flex flex-col justify-between gap-2"
     >
-      <h3 className="font-semibold text-lg text-balance">{task.name}</h3>
+      <h3 className="font-semibold text-lg w-2/3 text-pretty">{task.name}</h3>
       <p
         className={`${
           task.priority === "medium"
