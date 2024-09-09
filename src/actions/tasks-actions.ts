@@ -20,7 +20,6 @@ export async function createTask(formData: FormData) {
   });
 
   redirect("/");
-  revalidatePath("/");
 }
 
 export async function updateTask(formData: FormData) {
@@ -42,7 +41,6 @@ export async function updateTask(formData: FormData) {
     },
   });
   redirect("/");
-  revalidatePath("/");
 }
 
 export async function deleteTask(formData: FormData) {

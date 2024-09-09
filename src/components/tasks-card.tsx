@@ -1,6 +1,7 @@
 import prisma from "@/utils/prisma";
 import DeleteButton from "./delete-button-task";
 import Link from "next/link";
+
 export default async function TasksCard() {
   const allTasks = await prisma.task.findMany();
   return (

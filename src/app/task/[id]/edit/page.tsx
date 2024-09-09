@@ -13,8 +13,7 @@ export default async function TaskEdit({ params }: { params: { id: string } }) {
 
   return (
     <SectionContainer>
-      {/* <CreateTask task={taskFound} /> */}
-      <CreateTask />
+      <CreateTask task={taskFound} />
     </SectionContainer>
   );
 }
